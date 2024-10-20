@@ -56,6 +56,12 @@ section {
     text-align: center;
     border: 1px solid #ccc;
     width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.car:hover {
+    transform: translateY(-5px);
 }
 
 .car img {
@@ -69,4 +75,16 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car {
+        width: 80%;
+        max-width: 300px;
+    }
 }
